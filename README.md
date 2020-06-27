@@ -8,7 +8,7 @@ Install
 -------
 - Download the module in your /modules/custom directory.
 - Install it with Drupal Console: ```drupal moi kb_mailchimp```
-- Install it with Drush: drush en ```drush kb_mailchimp```
+- Install it with Drush: ```drush en kb_mailchimp```
 
 Use
 ---
