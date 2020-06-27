@@ -21,7 +21,7 @@ kb_mailchimp/signup
 
 Tree
 ------
-
+```
 |-- config
 |   |-- install
 |       |-- mailchimp_credentials.config.yml
@@ -36,7 +36,7 @@ Tree
 |-- kb_mailchimp.module
 |-- kb_mailchimp.routing.yml
 |-- kb_mailchimp.services.yml
-
+```
 
 
 Please read [my blog](http://karimboudjema.com/) or [get in touch](http://karimboudjema.com/en/contact).
