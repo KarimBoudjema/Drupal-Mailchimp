@@ -1,7 +1,6 @@
 # Mailchimp sign-up form in Drupal8/9
 
-
-This is a simple Drupal 8/9 module that provides a sign-up form to register new users to a Mailchimp audience list. 
+This is a simple Drupal 8/9 module that provides an ajax sign-up form to register new users to a Mailchimp audience list. 
 
 The module also provides a configuration form to store the Maichimp credentials and other sign-up form configurations.
 
@@ -9,15 +8,15 @@ Install
 -------
 - Download the module in your /modules/custom directory.
 - Install it with Drupal Console: ```drupal moi kb_mailchimp```
-- Install it with Drush: drush en ```kb_mailchimp```
+- Install it with Drush: drush en ```drush kb_mailchimp``
 
 Use
 ---
 To add your Maichimp credentials (API Key and List ID), go to:
-/admin/kb_mailchimp/credentials/config
+```/admin/kb_mailchimp/credentials/config```
 
-To add a new user to the mailchimp list, go to:
-kb_mailchimp/signup
+To add a new user to your mailchimp list, go to:
+```kb_mailchimp/signup```
 
 Tree
 ------
