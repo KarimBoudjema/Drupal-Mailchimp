@@ -1,0 +1,19 @@
+# Mailchimp config form.
+mailchimp_credentials.config_form:
+  path: '/admin/kb_mailchimp/credentials/config'
+  defaults:
+    _form: '\Drupal\kb_mailchimp\Form\MailchimpCredentialsConfigForm'
+    _title: 'Mailchimp API Settings'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+# Mailchimp signup.
+mailchimp.signup_form:
+  path: 'kb_mailchimp/signup'
+  defaults:
+    _form: '\Drupal\kb_mailchimp\Form\MailchimpSignForm'
+    _title: 'Subscribe to our Newsletter'
+  requirements:
+    _permission: 'access content'

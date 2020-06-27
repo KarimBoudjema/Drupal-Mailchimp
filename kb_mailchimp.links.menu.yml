@@ -1,0 +1,5 @@
+kb_mailchimp.config_menu:
+  title: 'Mailchimp Credentials'
+  description: 'Admin form to store Mailchimp credentials'
+  route_name: mailchimp_credentials.config_form
+  parent: system.admin_config_services

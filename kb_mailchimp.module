@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains kb_mailchimp.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function kb_mailchimp_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the kb_mailchimp module.
+    case 'help.page.kb_mailchimp':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('An example of a Mailchimp ajax subscriber form') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function kb_mailchimp_uninstall() {
+  Drupal::service('config.factory')->getEditable('mailchimp_credentials.config')->delete();
+}

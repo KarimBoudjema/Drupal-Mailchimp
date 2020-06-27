@@ -1,0 +1,4 @@
+services:
+  kb_mailchimp.service:
+    class: 'Drupal\kb_mailchimp\Service\MailchimpService'
+    arguments: ['@http_client', '@config.factory', '@logger.factory', '@messenger']
