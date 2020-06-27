@@ -1,4 +1,4 @@
-# Mailchimp sign-up form in Drupal8/9
+# Mailchimp sign-up form in Drupal8/9 with Guzzle PHP HTTP client
 
 This is a simple Drupal 8/9 module that provides an ajax sign-up form to register new users to a Mailchimp audience list. 
 
