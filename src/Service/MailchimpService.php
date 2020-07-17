@@ -14,7 +14,7 @@ use GuzzleHttp\Exception\RequestException;
  *
  * @package Drupal\kb_mailchimp\Service
  */
-class MailchimpService {
+class MailchimpService implements MailchimpServiceInterface {
 
   /**
    * The http client.

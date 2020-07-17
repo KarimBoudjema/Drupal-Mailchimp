@@ -5,7 +5,7 @@ namespace Drupal\kb_mailchimp\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Renderer;
-use Drupal\kb_mailchimp\Service\MailchimpService;
+use Drupal\kb_mailchimp\Service\MailchimpServiceInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Link;
@@ -23,7 +23,7 @@ class MailchimpSignForm extends FormBase {
   /**
    * The mailchimp service.
    *
-   * @var \Drupal\kb_mailchimp\Service\MailchimpService
+   * @var \Drupal\kb_mailchimp\Service\MailchimpServiceInterface
    */
   private $mailchimpService;
 
@@ -37,7 +37,7 @@ class MailchimpSignForm extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function __construct(MailchimpService $mailchimpService,
+  public function __construct(MailchimpServiceInterface $mailchimpService,
                               Renderer $renderer) {
 
     $this->mailchimpService = $mailchimpService;

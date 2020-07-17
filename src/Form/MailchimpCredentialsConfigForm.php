@@ -5,7 +5,7 @@ namespace Drupal\kb_mailchimp\Form;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\kb_mailchimp\Service\MailchimpService;
+use Drupal\kb_mailchimp\Service\MailchimpServiceInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 
@@ -27,12 +27,12 @@ class MailchimpCredentialsConfigForm extends ConfigFormBase {
   /**
    * The mailchimp service.
    *
-   * @var \Drupal\kb_mailchimp\Service\MailchimpService
+   * @var \Drupal\kb_mailchimp\Service\MailchimpServiceInterface
    */
   private $mailchimpService;
 
   public function __construct(ConfigFactoryInterface $config_factory,
-                              MailchimpService $mailchimpService) {
+                              MailchimpServiceInterface $mailchimpService) {
     parent::__construct($config_factory);
     $this->mailchimpService = $mailchimpService;
   }
